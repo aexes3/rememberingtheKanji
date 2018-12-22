@@ -2,12 +2,15 @@ import React from 'react';
 import './Card.css';
 
 function Card (props) {
+    // console.log(props.thingIwanttoExecute())
+
+    // let selectKanji = props.selectKanji;
     return(
         <div 
         className="card" 
-        key={props.id}
-        onClick={()=> props.selectKanji(props.id)}>
+        >
             <img
+            onClick={() => props.thingIwanttoExecute(props.id)}
             id={props.id}
             src={props.image}
             alt={props.id}

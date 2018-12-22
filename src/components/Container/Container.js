@@ -8,10 +8,12 @@ class Container extends Component {
         images,
         message: "test test test",
         score: 0,
-        topScore: 0
+        topScore: 0,
+        clicked: []
     };
 
-    selectKanji = (id, clicked) => {
+    selectKanji = (id) => {
+      console.log("select Kanji executed")
       if(!this.state.clicked.includes(id)){
         return this.setState({
           image: this.state.images.sort(() => Math.random() - 0.5),
@@ -35,11 +37,15 @@ class Container extends Component {
           </p>
           <div>
             {
-              this.state.images.map(image => 
-                <Card
+              this.state.images.map(image => { 
+                // this.selectKanji()
+                return (<Card
                   key={image.id}
+                  id={image.id}
                   image={image.imageLink}
-                />
+                  thingIwanttoExecute={this.selectKanji}
+                />)
+                }
               )
             }
           </div>
