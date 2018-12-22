@@ -1,0 +1,23 @@
+.jumbotron {
+	background-image: url("http://cdn-ak.f.st-hatena.com/images/fotolife/o/ornith/20150518/20150518204701.jpg");
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 0px;
+	text-align: center;
+	padding: 7%;
+}
+
+.jumbotron h1 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 65px;
+	font-weight: 900;
+	color:  rgba(255, 255, 255, 0.671);
+}
+
+.jumbotron h2 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 55px;
+	font-weight: 900;
+	color:  rgba(255, 255, 255, 0.685);
+}
